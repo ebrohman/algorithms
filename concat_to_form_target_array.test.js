@@ -12,6 +12,13 @@
 // Missing 6 from target array.
 
 function canConcatenate(src, target) {
-  return src.reduce((acc, ary) => { return acc.concat(ary) }).sort().join("") == target.sort().join("")
+  return src.reduce((acc, ary) => { return acc.concat(ary) }, []).sort().join("") == target.sort().join("")
 }
 
+test(`cannot`, () => {
+  expect(canConcatenate([1,2], [3,4])).toBe(false);
+});
+
+test(`can concat`, ()=>{
+  expect(canConcatenate([1,2,3], [3,2,1])).toBe(true)
+})

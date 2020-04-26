@@ -2,5 +2,11 @@
   "name": "code-problems",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^25.4.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }

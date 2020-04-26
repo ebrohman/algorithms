@@ -9,3 +9,13 @@
 function emptSq(num) {
   return(num * (num - 1)) * 4
 }
+
+test("empty squares of n = 1", ()=>{
+  expect(emptSq(1)).toBe(0);
+});
+
+test("n = 2", ()=>{
+  expect(emptSq(2)).toBe(8);
+});
+
+
