@@ -20,7 +20,6 @@
 
 // trackRobot(-10, 20, 10) ➞ [20, -20]
 // The amount to move can be negative.
-require("jest");
 
 function trackRobot(...steps) {
   const position = { x: 0, y: 0 };
